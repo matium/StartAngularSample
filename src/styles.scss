@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+
+// Import Compass mixins
+@import "~compass-mixins/lib/compass/reset";
+@import "~compass-mixins/lib/compass/css3";
+
+// Import Fonts
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,700');
+
+// Import Original Libraries
+@import "app/styles/mq";
+
+// Import Defaults
+@import "app/styles/defaults";
+
+// Import Components
+@import "app/styles/components/app.component";
+@import "app/styles/components/reflected-text.component";
+@import "app/styles/components/text-input.component";
