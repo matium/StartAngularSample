@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/**
+ * 英語フォントを使用するmixin
+ * @param $weight 適用するフォントのweight 'light''regular''bold'から選ぶ
+ */
+@mixin enFont($weight: 'regular') {
+    font-family: "Heebo", sans-serif;
+    line-height: 1.25em;
+    letter-spacing: 0;
+    @if ($weight == 'bold') {
+        font-weight: 700;
+    }
+    @else if ($weight == 'light') {
+        font-weight: 300;
+    }
+    @else {
+        font-weight: 400;
+    }
+}

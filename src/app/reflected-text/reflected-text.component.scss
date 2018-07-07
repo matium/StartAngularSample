@@ -1,11 +1,7 @@
-/*
-入力されたテキストを反映させるエリアのコンポーネント
- */
-app-reflected-text {
-    // 左右上下センタリング
-    @include display-flex;
-    @include align-items(center);
-    @include justify-content(center);
+@charset "UTF-8";
+@import "../styles/imports";
+
+p.contentsText {
     font-size: 30pt;
     line-height: 1.45em;
     letter-spacing: 0;

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "./styles/imports";
+
+// Reactアプリケーション領域
+.app-container {
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    // 入力されたテキストを反映させるエリアのコンポーネント
+    app-reflected-text {
+        @include flex(1 0);
+        width: 100%;
+        // 左右上下センタリング
+        @include display-flex;
+        @include align-items(center);
+        @include justify-content(center);
+    }
+
+    // テキスト入力フォームのコンポーネント
+    app-text-input {
+        position: relative;
+        @include flex(0 0);
+        width: 100%;
+        margin: 20px auto 0 auto;
+
+        @include desktop { width: 470px; }
+        @include xlarge { width: 570px; }
+    }
+}
