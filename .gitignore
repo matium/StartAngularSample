@@ -45,3 +45,4 @@ Thumbs.db
 
 # Add ignore
 package-lock.json
+/package-lock.json

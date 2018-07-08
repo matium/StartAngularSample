@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as ViewportUnitsBuggyfill from '../../node_modules/viewport-units-buggyfill/viewport-units-buggyfill';
 
 @Component({
     selector: 'app-root',
@@ -10,6 +11,8 @@ export class AppComponent {
     public contentsText: string;
 
     constructor() {
+        ViewportUnitsBuggyfill.init();
+        window.addEventListener('resize', ViewportUnitsBuggyfill.refresh, true);
         this.placeholderText = '(´･_･`)';
         this.contentsText = this.placeholderText;
     }
