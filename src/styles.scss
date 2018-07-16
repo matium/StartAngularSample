@@ -1,8 +1,8 @@
 @charset "UTF-8";
 // Reset
-@import "~compass-mixins/lib/compass/reset";
+@import "compass/reset";
 // 共通使用するmixinとか変数とかを読み込み
-@import "app/styles/imports";
+@import "imports";
 // Import Fonts
 @import url('https://fonts.googleapis.com/css?family=Heebo:300,400,700');
 

@@ -23,6 +23,13 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src",
+                "src/app/styles",
+                "node_modules/compass-mixins/lib"
+              ]
+            },
             "scripts": []
           },
           "configurations": {

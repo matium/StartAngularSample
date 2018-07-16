@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as ViewportUnitsBuggyfill from '../../node_modules/viewport-units-buggyfill/viewport-units-buggyfill';
+import * as ViewportUnitsBuggyfill from 'viewport-units-buggyfill';
 
 @Component({
     selector: 'app-root',
@@ -18,6 +18,10 @@ export class AppComponent {
     }
 
     reflectText = (text: string): void => {
-        this.contentsText = text;
+        if (text === '') {
+            this.contentsText = this.placeholderText;
+        } else {
+            this.contentsText = text;
+        }
     }
 }
